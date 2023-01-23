@@ -1,0 +1,1625 @@
+
+Akken@roma MINGW64 ~
+$ git config --global core.quotepath off
+
+Akken@roma MINGW64 ~
+$ cdd desktop
+bash: cdd: command not found
+
+Akken@roma MINGW64 ~
+$ cd desktop
+
+Akken@roma MINGW64 ~/desktop
+$ cd git_tutorial
+
+Akken@roma MINGW64 ~/desktop/git_tutorial
+$ cd work
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work
+$ touch hello.html
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work
+$ git init
+Initialized empty Git repository in C:/Users/Akken/Desktop/git_tutorial/work/.git/
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git add hello.html
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git commit -m "My first commit with using githowto"
+[master (root-commit) cbc8a15] My first commit with using githowto
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello.html
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git statusws
+git: 'statusws' is not a git command. See 'git --help'.
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git add hello.html
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.html
+
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git reset
+Unstaged changes after reset:
+M       hello.html
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ touch {a.html,b.html,c.html}
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        a.html
+        b.html
+        c.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git add a.html
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git add b.html
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git commit -m "we wanted to commit a and b together"
+[master 8588ff9] we wanted to commit a and b together
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a.html
+ create mode 100644 b.html
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git add c.html
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git commit -m "we added c to a and b by another commit"
+[master a66e3ff] we added c to a and b by another commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 c.html
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git commite
+git: 'commite' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git commit
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git commit
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git add hello.html
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.html
+
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git add hello.html
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.html
+
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git statuys
+git: 'statuys' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git statuys
+git: 'statuys' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git add hello.html
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.html
+
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git commit -m "Added standard HTML page tags"
+[master 1f59c67] Added standard HTML page tags
+ 1 file changed, 5 insertions(+)
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git statyus
+git: 'statyus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git add .
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git statues
+git: 'statues' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.html
+
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git commit -m "Added HTML header"
+[master b800980] Added HTML header
+ 1 file changed, 8 insertions(+)
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git log
+commit b80098065e6d611a94c2f028f93c7de4ed0c5f47 (HEAD -> master)
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:20:19 2023 +0600
+
+    Added HTML header
+
+commit 1f59c6719ea58ed81b336993be45704eafecd5e9
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:16:39 2023 +0600
+
+    Added standard HTML page tags
+
+commit a66e3ff1b1b2454e1bdd7f22edc18f2eac7c7e02
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:58:46 2023 +0600
+
+    we added c to a and b by another commit
+
+commit 8588ff91573ed9b00fd4830a2251cb1e9873472b
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:57:50 2023 +0600
+
+    we wanted to commit a and b together
+
+commit cbc8a152e3bbafda02edcabc8d12335c78ce2820
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:41:47 2023 +0600
+
+    My first commit with using githowto
+oneline
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:20:19 2023 +0600
+
+    Added HTML header
+
+commit 1f59c6719ea58ed81b336993be45704eafecd5e9
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:16:39 2023 +0600
+
+    Added standard HTML page tags
+
+commit a66e3ff1b1b2454e1bdd7f22edc18f2eac7c7e02
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:58:46 2023 +0600
+
+    we added c to a and b by another commit
+
+commit 8588ff91573ed9b00fd4830a2251cb1e9873472b
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:57:50 2023 +0600
+
+    we wanted to commit a and b together
+
+commit cbc8a152e3bbafda02edcabc8d12335c78ce2820
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:41:47 2023 +0600
+
+    My first commit with using githowto
+oneline
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:20:19 2023 +0600
+
+    Added HTML header
+
+commit 1f59c6719ea58ed81b336993be45704eafecd5e9
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:16:39 2023 +0600
+
+    Added standard HTML page tags
+
+commit a66e3ff1b1b2454e1bdd7f22edc18f2eac7c7e02
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:58:46 2023 +0600
+
+    we added c to a and b by another commit
+
+commit 8588ff91573ed9b00fd4830a2251cb1e9873472b
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:57:50 2023 +0600
+
+    we wanted to commit a and b together
+
+commit cbc8a152e3bbafda02edcabc8d12335c78ce2820
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:41:47 2023 +0600
+
+    My first commit with using githowto
+oneline
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:20:19 2023 +0600
+
+    Added HTML header
+
+commit 1f59c6719ea58ed81b336993be45704eafecd5e9
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:16:39 2023 +0600
+
+    Added standard HTML page tags
+
+commit a66e3ff1b1b2454e1bdd7f22edc18f2eac7c7e02
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:58:46 2023 +0600
+
+    we added c to a and b by another commit
+
+commit 8588ff91573ed9b00fd4830a2251cb1e9873472b
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:57:50 2023 +0600
+
+    we wanted to commit a and b together
+
+commit cbc8a152e3bbafda02edcabc8d12335c78ce2820
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:41:47 2023 +0600
+
+    My first commit with using githowto
+oneline
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:20:19 2023 +0600
+
+    Added HTML header
+
+commit 1f59c6719ea58ed81b336993be45704eafecd5e9
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:16:39 2023 +0600
+
+    Added standard HTML page tags
+
+commit a66e3ff1b1b2454e1bdd7f22edc18f2eac7c7e02
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:58:46 2023 +0600
+
+    we added c to a and b by another commit
+
+commit 8588ff91573ed9b00fd4830a2251cb1e9873472b
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:57:50 2023 +0600
+
+    we wanted to commit a and b together
+
+commit cbc8a152e3bbafda02edcabc8d12335c78ce2820
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:41:47 2023 +0600
+
+    My first commit with using githowto
+oneline
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:20:19 2023 +0600
+
+    Added HTML header
+
+commit 1f59c6719ea58ed81b336993be45704eafecd5e9
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:16:39 2023 +0600
+
+    Added standard HTML page tags
+
+commit a66e3ff1b1b2454e1bdd7f22edc18f2eac7c7e02
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:58:46 2023 +0600
+
+    we added c to a and b by another commit
+
+commit 8588ff91573ed9b00fd4830a2251cb1e9873472b
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:57:50 2023 +0600
+
+    we wanted to commit a and b together
+
+commit cbc8a152e3bbafda02edcabc8d12335c78ce2820
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:41:47 2023 +0600
+
+    My first commit with using githowto
+oneline
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:20:19 2023 +0600
+
+    Added HTML header
+
+commit 1f59c6719ea58ed81b336993be45704eafecd5e9
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:16:39 2023 +0600
+
+    Added standard HTML page tags
+
+commit a66e3ff1b1b2454e1bdd7f22edc18f2eac7c7e02
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:58:46 2023 +0600
+
+    we added c to a and b by another commit
+
+commit 8588ff91573ed9b00fd4830a2251cb1e9873472b
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:57:50 2023 +0600
+
+    we wanted to commit a and b together
+
+commit cbc8a152e3bbafda02edcabc8d12335c78ce2820
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:41:47 2023 +0600
+
+    My first commit with using githowto
+oneline
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:20:19 2023 +0600
+
+    Added HTML header
+
+commit 1f59c6719ea58ed81b336993be45704eafecd5e9
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:16:39 2023 +0600
+
+    Added standard HTML page tags
+
+commit a66e3ff1b1b2454e1bdd7f22edc18f2eac7c7e02
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:58:46 2023 +0600
+
+    we added c to a and b by another commit
+
+commit 8588ff91573ed9b00fd4830a2251cb1e9873472b
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:57:50 2023 +0600
+
+    we wanted to commit a and b together
+
+commit cbc8a152e3bbafda02edcabc8d12335c78ce2820
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:41:47 2023 +0600
+
+    My first commit with using githowto
+oneline
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:20:19 2023 +0600
+
+    Added HTML header
+
+commit 1f59c6719ea58ed81b336993be45704eafecd5e9
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:16:39 2023 +0600
+
+    Added standard HTML page tags
+
+commit a66e3ff1b1b2454e1bdd7f22edc18f2eac7c7e02
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:58:46 2023 +0600
+
+    we added c to a and b by another commit
+
+commit 8588ff91573ed9b00fd4830a2251cb1e9873472b
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:57:50 2023 +0600
+
+    we wanted to commit a and b together
+
+commit cbc8a152e3bbafda02edcabc8d12335c78ce2820
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:41:47 2023 +0600
+
+    My first commit with using githowto
+oneline
+commit b80098065e6d611a94c2f028f93c7de4ed0c5f47 (HEAD -> master)
+commit b80098065e6d611a94c2f028f93c7de4ed0c5f47 (HEAD -> master)
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:20:19 2023 +0600
+
+    Added HTML header
+
+commit 1f59c6719ea58ed81b336993be45704eafecd5e9
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:16:39 2023 +0600
+
+    Added standard HTML page tags
+
+commit a66e3ff1b1b2454e1bdd7f22edc18f2eac7c7e02
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:58:46 2023 +0600
+
+    we added c to a and b by another commit
+
+commit 8588ff91573ed9b00fd4830a2251cb1e9873472b
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:57:50 2023 +0600
+
+    we wanted to commit a and b together
+
+commit cbc8a152e3bbafda02edcabc8d12335c78ce2820
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:41:47 2023 +0600
+
+    My first commit with using githowto
+ ESCOD
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:20:19 2023 +0600
+
+    Added HTML header
+
+commit 1f59c6719ea58ed81b336993be45704eafecd5e9
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:16:39 2023 +0600
+
+    Added standard HTML page tags
+
+commit a66e3ff1b1b2454e1bdd7f22edc18f2eac7c7e02
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:58:46 2023 +0600
+
+    we added c to a and b by another commit
+
+commit 8588ff91573ed9b00fd4830a2251cb1e9873472b
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:57:50 2023 +0600
+
+    we wanted to commit a and b together
+
+commit cbc8a152e3bbafda02edcabc8d12335c78ce2820
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:41:47 2023 +0600
+
+    My first commit with using githowto
+ ESCOD
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:20:19 2023 +0600
+
+    Added HTML header
+
+commit 1f59c6719ea58ed81b336993be45704eafecd5e9
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:16:39 2023 +0600
+
+    Added standard HTML page tags
+
+commit a66e3ff1b1b2454e1bdd7f22edc18f2eac7c7e02
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:58:46 2023 +0600
+
+    we added c to a and b by another commit
+
+commit 8588ff91573ed9b00fd4830a2251cb1e9873472b
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:57:50 2023 +0600
+
+    we wanted to commit a and b together
+
+commit cbc8a152e3bbafda02edcabc8d12335c78ce2820
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:41:47 2023 +0600
+
+    My first commit with using githowto
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:20:19 2023 +0600
+
+    Added HTML header
+
+commit 1f59c6719ea58ed81b336993be45704eafecd5e9
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:16:39 2023 +0600
+
+    Added standard HTML page tags
+
+commit a66e3ff1b1b2454e1bdd7f22edc18f2eac7c7e02
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:58:46 2023 +0600
+
+    we added c to a and b by another commit
+
+commit 8588ff91573ed9b00fd4830a2251cb1e9873472b
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:57:50 2023 +0600
+
+    we wanted to commit a and b together
+
+commit cbc8a152e3bbafda02edcabc8d12335c78ce2820
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:41:47 2023 +0600
+
+    My first commit with using githowto
+ ESCOD
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:20:19 2023 +0600
+
+    Added HTML header
+
+commit 1f59c6719ea58ed81b336993be45704eafecd5e9
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:16:39 2023 +0600
+
+    Added standard HTML page tags
+
+commit a66e3ff1b1b2454e1bdd7f22edc18f2eac7c7e02
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:58:46 2023 +0600
+
+    we added c to a and b by another commit
+
+commit 8588ff91573ed9b00fd4830a2251cb1e9873472b
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:57:50 2023 +0600
+
+    we wanted to commit a and b together
+
+commit cbc8a152e3bbafda02edcabc8d12335c78ce2820
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:41:47 2023 +0600
+
+    My first commit with using githowto
+oneline
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:20:19 2023 +0600
+
+    Added HTML header
+
+commit 1f59c6719ea58ed81b336993be45704eafecd5e9
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:16:39 2023 +0600
+
+    Added standard HTML page tags
+
+commit a66e3ff1b1b2454e1bdd7f22edc18f2eac7c7e02
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:58:46 2023 +0600
+
+    we added c to a and b by another commit
+
+commit 8588ff91573ed9b00fd4830a2251cb1e9873472b
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:57:50 2023 +0600
+
+    we wanted to commit a and b together
+
+commit cbc8a152e3bbafda02edcabc8d12335c78ce2820
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:41:47 2023 +0600
+
+    My first commit with using githowto
+oneline
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:20:19 2023 +0600
+
+    Added HTML header
+
+commit 1f59c6719ea58ed81b336993be45704eafecd5e9
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:16:39 2023 +0600
+
+    Added standard HTML page tags
+
+commit a66e3ff1b1b2454e1bdd7f22edc18f2eac7c7e02
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:58:46 2023 +0600
+
+    we added c to a and b by another commit
+
+commit 8588ff91573ed9b00fd4830a2251cb1e9873472b
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:57:50 2023 +0600
+
+    we wanted to commit a and b together
+
+commit cbc8a152e3bbafda02edcabc8d12335c78ce2820
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:41:47 2023 +0600
+
+    My first commit with using githowto
+oneline
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:20:19 2023 +0600
+
+    Added HTML header
+
+commit 1f59c6719ea58ed81b336993be45704eafecd5e9
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:16:39 2023 +0600
+
+    Added standard HTML page tags
+
+commit a66e3ff1b1b2454e1bdd7f22edc18f2eac7c7e02
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:58:46 2023 +0600
+
+    we added c to a and b by another commit
+
+commit 8588ff91573ed9b00fd4830a2251cb1e9873472b
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:57:50 2023 +0600
+
+    we wanted to commit a and b together
+
+commit cbc8a152e3bbafda02edcabc8d12335c78ce2820
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:41:47 2023 +0600
+
+    My first commit with using githowto
+oneline
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:20:19 2023 +0600
+
+    Added HTML header
+
+commit 1f59c6719ea58ed81b336993be45704eafecd5e9
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:16:39 2023 +0600
+
+    Added standard HTML page tags
+
+commit a66e3ff1b1b2454e1bdd7f22edc18f2eac7c7e02
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:58:46 2023 +0600
+
+    we added c to a and b by another commit
+
+commit 8588ff91573ed9b00fd4830a2251cb1e9873472b
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:57:50 2023 +0600
+
+    we wanted to commit a and b together
+
+commit cbc8a152e3bbafda02edcabc8d12335c78ce2820
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:41:47 2023 +0600
+
+    My first commit with using githowto
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git log --pretty=oneline
+b80098065e6d611a94c2f028f93c7de4ed0c5f47 (HEAD -> master) Added HTML header
+1f59c6719ea58ed81b336993be45704eafecd5e9 Added standard HTML page tags
+a66e3ff1b1b2454e1bdd7f22edc18f2eac7c7e02 we added c to a and b by another commit
+8588ff91573ed9b00fd4830a2251cb1e9873472b we wanted to commit a and b together
+cbc8a152e3bbafda02edcabc8d12335c78ce2820 My first commit with using githowto
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ man git lohg
+bash: man: command not found
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ man git log
+bash: man: command not found
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git log help
+fatal: ambiguous argument 'help': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git log info
+fatal: ambiguous argument 'info': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ man git log.
+bash: man: command not found
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git log --all --pretty=format:"%h %cd %s (%an)" --since='7 days ago'
+b800980 Mon Jan 23 00:20:19 2023 +0600 Added HTML header (Ramazan)
+1f59c67 Mon Jan 23 00:16:39 2023 +0600 Added standard HTML page tags (Ramazan)
+a66e3ff Sun Jan 22 23:58:46 2023 +0600 we added c to a and b by another commit (Ramazan)
+8588ff9 Sun Jan 22 23:57:50 2023 +0600 we wanted to commit a and b together (Ramazan)
+cbc8a15 Sun Jan 22 23:41:47 2023 +0600 My first commit with using githowto (Ramazan)
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git log --all --pretty=format:"%h %cd %s (%an)" --since='7 days ago'
+b800980 Mon Jan 23 00:20:19 2023 +0600 Added HTML header (Ramazan)
+1f59c67 Mon Jan 23 00:16:39 2023 +0600 Added standard HTML page tags (Ramazan)
+a66e3ff Sun Jan 22 23:58:46 2023 +0600 we added c to a and b by another commit (Ramazan)
+8588ff9 Sun Jan 22 23:57:50 2023 +0600 we wanted to commit a and b together (Ramazan)
+cbc8a15 Sun Jan 22 23:41:47 2023 +0600 My first commit with using githowto (Ramazan)
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short
+* b800980 2023-01-23 | Added HTML header (HEAD -> master) [Ramazan]
+* 1f59c67 2023-01-23 | Added standard HTML page tags [Ramazan]
+* a66e3ff 2023-01-22 | we added c to a and b by another commit [Ramazan]
+* 8588ff9 2023-01-22 | we wanted to commit a and b together [Ramazan]
+* cbc8a15 2023-01-22 | My first commit with using githowto [Ramazan]
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git log
+commit b80098065e6d611a94c2f028f93c7de4ed0c5f47 (HEAD -> master)
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:20:19 2023 +0600
+
+    Added HTML header
+
+commit 1f59c6719ea58ed81b336993be45704eafecd5e9
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Mon Jan 23 00:16:39 2023 +0600
+
+    Added standard HTML page tags
+
+commit a66e3ff1b1b2454e1bdd7f22edc18f2eac7c7e02
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:58:46 2023 +0600
+
+    we added c to a and b by another commit
+
+commit 8588ff91573ed9b00fd4830a2251cb1e9873472b
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:57:50 2023 +0600
+
+    we wanted to commit a and b together
+
+commit cbc8a152e3bbafda02edcabc8d12335c78ce2820
+Author: Ramazan <syrlybai056@gmail.com>
+Date:   Sun Jan 22 23:41:47 2023 +0600
+
+    My first commit with using githowto
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ gitl
+bash: gitl: command not found
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ gitk
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ touch .gitconfig
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git config --global alias.co checkout
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git branch
+* master
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git co -b roma
+Switched to a new branch 'roma'
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (roma)
+$ git config --global alias.st status
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (roma)
+$ git st
+On branch roma
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitconfig
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (roma)
+$ git status
+On branch roma
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitconfig
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (roma)
+$ git add .
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (roma)
+$ git st
+On branch roma
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitconfig
+
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (roma)
+$ git config alias.sc checkout
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (roma)
+$ git sc -b zhirik
+Switched to a new branch 'zhirik'
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (zhirik)
+$ git config sd checkout
+error: key does not contain a section: sd
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (zhirik)
+$ git config alias.flag checkout
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (zhirik)
+$ git flag -b ramazan
+Switched to a new branch 'ramazan'
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (ramazan)
+$ git config --global alias.check checkout
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (ramazan)
+$ git config --global br branch
+error: key does not contain a section: br
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (ramazan)
+$ git br
+git: 'br' is not a git command. See 'git --help'.
+
+The most similar commands are
+        branch
+        var
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (ramazan)
+$ git config --global alias.br branch
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (ramazan)
+$ git br
+  master
+* ramazan
+  roma
+  zhirik
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (ramazan)
+$ git br master
+fatal: a branch named 'master' already exists
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (ramazan)
+$ git check master
+Switched to branch 'master'
+A       .gitconfig
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git ci -b "hi"
+git: 'ci' is not a git command. See 'git --help'.
+
+The most similar command is
+        co
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git ci
+git: 'ci' is not a git command. See 'git --help'.
+
+The most similar command is
+        co
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ type
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git config --global alias.hist log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+bash: %s%d: command not found
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git hist
+git: 'hist' is not a git command. See 'git --help'.
+
+The most similar command is
+        bisect
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git config --global alias.hist log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+bash: %s%d: command not found
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git config --global alias.hist ("log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short")
+bash: syntax error near unexpected token `('
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git config --global alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ touch .profile
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ gcd zhirik
+bash: gcd: command not found
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ gco roma
+bash: gco: command not found
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git hist
+* b800980 2023-01-23 | Added HTML header (HEAD -> master, zhirik, roma, ramazan) [Ramazan]
+* 1f59c67 2023-01-23 | Added standard HTML page tags [Ramazan]
+* a66e3ff 2023-01-22 | we added c to a and b by another commit [Ramazan]
+* 8588ff9 2023-01-22 | we wanted to commit a and b together [Ramazan]
+* cbc8a15 2023-01-22 | My first commit with using githowto [Ramazan]
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ cat hello.html
+<html>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ cat 1.py
+cat: 1.py: No such file or directory
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ dir
+a.html  b.html  c.html  hello.html
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ cat b.html
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ cat a.html
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git tag version one
+fatal: Failed to resolve 'one' as a valid ref.
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git tag versionone
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git tag version_one
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git tags
+git: 'tags' is not a git command. See 'git --help'.
+
+The most similar commands are
+        stage
+        tag
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git stage
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git br
+* master
+  ramazan
+  roma
+  zhirik
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git tag version_1
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git checkout versionone^
+Note: switching to 'versionone^'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 1f59c67 Added standard HTML page tags
+A       .gitconfig
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((1f59c67...))
+$ cat hello.html
+<html>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((1f59c67...))
+$ git check version_1
+Previous HEAD position was 1f59c67 Added standard HTML page tags
+HEAD is now at b800980 Added HTML header
+A       .gitconfig
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((version_1))
+$ cat hello.html
+<html>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((version_1))
+$ git tag
+version_1
+version_one
+versionone
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((version_1))
+$ v1
+bash: v1: command not found
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((version_1))
+$ git hist master --all
+* b800980 2023-01-23 | Added HTML header (HEAD, tag: versionone, tag: version_one, tag: version_1, zhirik, roma, ramazan, master) [Ramazan]
+* 1f59c67 2023-01-23 | Added standard HTML page tags [Ramazan]
+* a66e3ff 2023-01-22 | we added c to a and b by another commit [Ramazan]
+* 8588ff9 2023-01-22 | we wanted to commit a and b together [Ramazan]
+* cbc8a15 2023-01-22 | My first commit with using githowto [Ramazan]
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((version_1))
+$ git br
+* (HEAD detached at version_1)
+  master
+  ramazan
+  roma
+  zhirik
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((version_1))
+$ git check master
+Switched to branch 'master'
+A       .gitconfig
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git br
+* master
+  ramazan
+  roma
+  zhirik
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ cat hello.html
+<html>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+
+Roma version one you should check it
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git st
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitconfig
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitconfig
+        modified:   hello.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .profile
+
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git tag one
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git add .
+warning: in the working copy of '.profile', LF will be replaced by CRLF the next time Git touches it
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git commit -m "one"
+[master afc761d] one
+ 3 files changed, 24 insertions(+), 1 deletion(-)
+ create mode 100644 .gitconfig
+ create mode 100644 .profile
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git st
+On branch master
+nothing to commit, working tree clean
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git tag two
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git tag
+one
+two
+version_1
+version_one
+versionone
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (master)
+$ git checkout one
+Note: switching to 'one'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at b800980 Added HTML header
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((one))
+$ git st
+HEAD detached at one
+nothing to commit, working tree clean
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((one))
+$ git tag
+one
+two
+version_1
+version_one
+versionone
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((one))
+$ git checkout one^
+Previous HEAD position was b800980 Added HTML header
+HEAD is now at 1f59c67 Added standard HTML page tags
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((1f59c67...))
+$ git st
+HEAD detached at 1f59c67
+nothing to commit, working tree clean
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((1f59c67...))
+$ git checkout two
+Previous HEAD position was 1f59c67 Added standard HTML page tags
+HEAD is now at afc761d one
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((two))
+$ git sst
+git: 'sst' is not a git command. See 'git --help'.
+
+The most similar commands are
+        hist
+        st
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((two))
+$ git sst
+git: 'sst' is not a git command. See 'git --help'.
+
+The most similar commands are
+        hist
+        st
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((two))
+$ git st
+HEAD detached at two
+nothing to commit, working tree clean
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((two))
+$ git hist master --all
+* afc761d 2023-01-24 | one (HEAD, tag: two, master) [Ramazan]
+* b800980 2023-01-23 | Added HTML header (tag: versionone, tag: version_one, tag: version_1, tag: one, zhirik, roma, ramazan) [Ramazan]
+* 1f59c67 2023-01-23 | Added standard HTML page tags [Ramazan]
+* a66e3ff 2023-01-22 | we added c to a and b by another commit [Ramazan]
+* 8588ff9 2023-01-22 | we wanted to commit a and b together [Ramazan]
+* cbc8a15 2023-01-22 | My first commit with using githowto [Ramazan]
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((two))
+$ git commit -m "the last commit from 1 to 13 topics"
+HEAD detached at two
+nothing to commit, working tree clean
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((two))
+$ git add .
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((two))
+$ git commit -m "the last commit from 1 to 13 topics"
+HEAD detached at two
+nothing to commit, working tree clean
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((two))
+$ git remote add origin https://github.com/RamazanFIT/githowtoHW.git
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((two))
+$ git push
+fatal: You are not currently on a branch.
+To push the history leading to the current (detached HEAD)
+state now, use
+
+    git push origin HEAD:<name-of-remote-branch>
+
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((two))
+$ git push .
+fatal: You are not currently on a branch.
+To push the history leading to the current (detached HEAD)
+state now, use
+
+    git push . HEAD:<name-of-remote-branch>
+
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((two))
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/RamazanFIT/githowtoHW.git'
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((two))
+$ git push -u origin
+fatal: You are not currently on a branch.
+To push the history leading to the current (detached HEAD)
+state now, use
+
+    git push origin HEAD:<name-of-remote-branch>
+
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((two))
+$ git push -u
+fatal: You are not currently on a branch.
+To push the history leading to the current (detached HEAD)
+state now, use
+
+    git push origin HEAD:<name-of-remote-branch>
+
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((two))
+$ git push
+fatal: You are not currently on a branch.
+To push the history leading to the current (detached HEAD)
+state now, use
+
+    git push origin HEAD:<name-of-remote-branch>
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((two))
+$ git br
+* (HEAD detached at two)
+  master
+  ramazan
+  roma
+  zhirik
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((two))
+$ git push origin master
+git pushEnumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (18/18), 1.66 KiB | 189.00 KiB/s, done.
+Total 18 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), done.
+oTo https://github.com/RamazanFIT/githowtoHW.git
+ * [new branch]      master -> master
+r
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((two))
+$ git push origin ramazan
+git push origin Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'ramazan' on GitHub by visiting:
+remote:      https://github.com/RamazanFIT/githowtoHW/pull/new/ramazan
+remote:
+To https://github.com/RamazanFIT/githowtoHW.git
+ * [new branch]      ramazan -> ramazan
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((two))
+$ git push origin roma
+git push origTotal 0 (delta 0), reused 0 (delta 0), pack-reused 0
+in remote:
+remote: Create a pull request for 'roma' on GitHub by visiting:
+remote:      https://github.com/RamazanFIT/githowtoHW/pull/new/roma
+remote:
+To https://github.com/RamazanFIT/githowtoHW.git
+ * [new branch]      roma -> roma
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((two))
+$ git push origin zhirik
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'zhirik' on GitHub by visiting:
+remote:      https://github.com/RamazanFIT/githowtoHW/pull/new/zhirik
+remote:
+To https://github.com/RamazanFIT/githowtoHW.git
+ * [new branch]      zhirik -> zhirik
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work ((two))
+$ git check roma
+Previous HEAD position was afc761d one
+Switched to branch 'roma'
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (roma)
+$ git br
+  master
+  ramazan
+* roma
+  zhirik
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (roma)
+$ touch console.txt
+
+Akken@roma MINGW64 ~/desktop/git_tutorial/work (roma)
+$
